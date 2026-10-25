@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DataSuite">
+	
+	<listeners>
+	    <listener class-name="com.isomod.utilitypackage.Listeners_class"/> 
+	</listeners>
+	
+  <test thread-count="4"  parallel="classes" name="DatadriverTest">
+    <classes>
+      <class name="com.isomod.testclass.TC001_Datadriventest"/>
+    </classes>
+  </test> <!-- DatadriverTest -->
+</suite> <!-- DataSuite -->
